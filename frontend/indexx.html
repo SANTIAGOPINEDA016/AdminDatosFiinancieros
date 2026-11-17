@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Administracion de gastos</title>
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo">
+            <h2>Administracion de gastos</h2>
+
+            <label for="monto">Ingresa un monto</label>
+            <input type="number" id="monto" placeholder="Monto $">
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="Comida">Comida</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Servicios">Servicios</option>
+                <option value="Salario">Salario</option>
+            </select>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha">
+
+            <button type="button" id="btnGuardar">Guardar</button>
+        </div>
+
+        <hr>
+
+        <div class="hijo" id="lista"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
