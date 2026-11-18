@@ -1,13 +1,13 @@
+module.exports = GastosModel
+
 const database = require("../db/conexion_db")
 
-class GastosModel{
+class GastosModel {
 
-     static async obtenerGastos(){
-          const [resultado] = await database.query("SELECT * FROM transacciones")
-          //[datos][metadatos]
-          console.log(resultado)
-          return resultado
-     }
+    static async obtenerGastos() {
+        const [resultado] = await database.query("SELECT * FROM transacciones")
+        return resultado
+    }
 
 }
 
